@@ -1,0 +1,14 @@
+python3 train.py \
+    --dataset cinic10 \
+    --root /data/cinic10 \
+    --name cinic10.Sh.NetV2_2.0_0.5_pro.kd \
+    --teacher_name shufflenetV2-2.0 \
+    --student_name shufflenetV2-0.5 \
+    -b 96 \
+    -j 8  \
+    --lr 0.01 \
+    --epochs 140 \
+    --kd_method kd \
+    --temperature 16 \
+    --teacher_model runs/teacher/cinic10_Sh.NetV2-2.0_pro_e140/model_best.pth.tar \
+    --tensorboard

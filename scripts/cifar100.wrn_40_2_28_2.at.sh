@@ -1,0 +1,12 @@
+python3 train.py \
+    --dataset cifar100 \
+    --name cifar100.wrn_40_2_28_2.at \
+    --layers_t 40 \
+    --widen-factor_t 2 \
+    --layers_s 28 \
+    --widen-factor_s 2  \
+    --epochs 200 \
+    --normalized \
+    --kd_method at \
+    --teacher_model runs/teacher/cifar100_wrn_40_2_e200/model_best.pth.tar \
+    --tensorboard
