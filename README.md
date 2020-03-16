@@ -4,7 +4,7 @@
 
 Distillation reproduces some state-of-the-art knowledge distillation methods. Knowledge distillation techniques could boost the performance of a miniaturized student network with the supervision of the output distribution and feature maps from a sophisticated teacher network. Generally, Knowledge distillation methods can be divided into two categories: **output distillation** and **feature distillation**. In output distillation methods, only the last output layer of teacher and student networks are leveraged for knowledge distillation. While in the feature distillation methods, several distillation positions are selected.
 
-![Output distillation and feature distillation methods.](overview.png)
+![Output distillation and feature distillation methods.](figs/overview.png)
 
 ## Model zoo and baselines
 
